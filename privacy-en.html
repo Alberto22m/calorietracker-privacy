@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Privacy Policy — CalorieTracker</title>
+<title>Privacy Policy — CalRing</title>
 <style>
 body{font:16px/1.55 -apple-system,system-ui,sans-serif;max-width:720px;margin:40px auto;padding:0 18px;color:#1d1d1f}
 h1{font-size:26px}h2{font-size:19px;margin-top:28px}
@@ -11,11 +11,11 @@ h1{font-size:26px}h2{font-size:19px;margin-top:28px}
 </head>
 <body>
 <h1>Privacy Policy</h1>
-<p>Effective date: October 20, 2026.</p>
-<p>The CalorieTracker app (the "app") is developed by Mane Hovakimyan. This policy describes what data the app processes.</p>
+<p>Effective date: November 24, 2026.</p>
+<p>The CalRing app (formerly CalorieTracker, the "app") is developed by Mane Hovakimyan. This policy describes what data the app processes.</p>
 
 <h2>1. Account and server</h2>
-<p>The app has no sign-up or account. The developer does not receive or store your data on any server.</p>
+<p>The app has no sign-up or account. Data reaches the developer's server only when you use Calories from a photo (section 5), and the server does not keep it, apart from a daily photo count.</p>
 
 <h2>2. Data you enter</h2>
 <p>Your food diary, products, dishes, weight, water, goals and profile settings are stored only on your device. They are not sent to the developer.</p>
@@ -24,18 +24,24 @@ h1{font-size:26px}h2{font-size:19px;margin-top:28px}
 <p>Apple Health integration is off by default. If you turn it on, the app can read and write nutrition and weight data in Health. This data stays on your device and is not sent to the developer. You can revoke access in the app settings or in the Health section of your iPhone.</p>
 
 <h2>4. Camera and barcode scanner</h2>
-<p>The camera is used only to recognize barcodes. The image is not saved or transmitted. The scanned barcode number is sent to the open food database Open Food Facts (world.openfoodfacts.org) to look up the product name and ingredients.</p>
+<p>The camera is used to scan barcodes and for Calories from a photo. A barcode image is not saved or transmitted: only the scanned barcode number is sent to the open food database Open Food Facts (world.openfoodfacts.org) to look up the product name and ingredients.</p>
 
-<h2>5. Subscription</h2>
-<p>The subscription is purchased and paid through your Apple ID. The developer does not receive your card details or payment information. The app checks subscription status on your device through StoreKit.</p>
+<h2>5. Calories from a photo</h2>
+<p>This feature works only when you start it yourself and, on first use, allow the photo to be sent. The dish photo and the optional hint you type are then sent over an encrypted connection to the CalRing server (running on Cloudflare) and from there to Claude, the AI service of Anthropic, PBC, which recognizes the food, portion sizes and calories. Anthropic processes this data under its commercial terms and its privacy policy: <a href="https://www.anthropic.com/legal/privacy">anthropic.com/legal/privacy</a>.</p>
+<p>The CalRing server does not store the photo or the hint and does not write them to logs. The recognition result goes back to the app, where you review it, and it is stored only on your device.</p>
+<p>Together with the photo, the app sends Apple's signed proof of your subscription (a StoreKit transaction). The server checks Apple's signature to confirm the subscription is active and counts how many photos were sent that day under this subscription. Only that number for the current day is kept; it is not linked to your name, Apple ID or any other data. The server's technical log keeps only anonymous numbers: how many foods were recognized and how much AI capacity was used.</p>
+<p>You can withdraw permission to send photos in the app's profile at any time. The feature is not available in mainland China.</p>
 
-<h2>6. Analytics and advertising</h2>
+<h2>6. Subscription</h2>
+<p>The subscription is purchased and paid through your Apple ID. The developer does not receive your card details or payment information. The app checks subscription status on your device through StoreKit; for Calories from a photo, the CalRing server also checks the subscription proof (section 5).</p>
+
+<h2>7. Analytics and advertising</h2>
 <p>The app does not use analytics services, advertising identifiers or cross-app tracking.</p>
 
-<h2>7. Your rights</h2>
-<p>To delete your data, delete the app: all data on the device is removed with it. You can cancel the subscription in your Apple ID settings.</p>
+<h2>8. Your rights</h2>
+<p>To delete your data, delete the app: all data on the device is removed with it. The CalRing server does not keep photos sent for recognition. You can cancel the subscription in your Apple ID settings.</p>
 
-<h2>8. Contact</h2>
+<h2>9. Contact</h2>
 <p>Questions about this policy: rnane.1@icloud.com.</p>
 
 <p><a href="privacy.html">Русская версия</a></p>
